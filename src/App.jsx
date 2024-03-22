@@ -17,7 +17,6 @@ function App() {
 			<Search
 				search={search}
 				setSearch={setSearch}
-				emojiList={emojiList}
 				setEmojiList={setEmojiList}
 				emojiListJSON={emojiListJSON}
 			/>

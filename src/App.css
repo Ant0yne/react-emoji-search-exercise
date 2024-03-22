@@ -41,6 +41,10 @@ button {
 	border-radius: 5px;
 }
 
+button:hover {
+	background-color: var(--purple);
+}
+
 a {
 	color: var(--black);
 	text-decoration: none;

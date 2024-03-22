@@ -1,12 +1,17 @@
 import "./search.css";
 
-const Search = ({
-	search,
-	setSearch,
-	emojiList,
-	setEmojiList,
-	emojiListJSON,
-}) => {
+const Search = ({ search, setSearch, setEmojiList, emojiListJSON }) => {
+	const handleSearch = (e) => {
+		setSearch(e.target.value);
+		const emojiSelec = [];
+		emojiListJSON.map((emoji) => {
+			if (emoji.keywords.indexOf(e.target.value.toLowerCase()) !== -1) {
+				emojiSelec.push(emoji);
+			}
+		});
+		setEmojiList(emojiSelec);
+	};
+
 	return (
 		<header>
 			<h1>😎 EmojiSearch 😎</h1>
@@ -15,16 +20,7 @@ const Search = ({
 				name="emojiSearch"
 				placeholder="Search an emoji..."
 				value={search}
-				onChange={(e) => {
-					setSearch(e.target.value);
-					const emojiSelec = [];
-					emojiListJSON.map((emoji) => {
-						if (emoji.keywords.indexOf(e.target.value) !== -1) {
-							emojiSelec.push(emoji);
-						}
-					});
-					setEmojiList(emojiSelec);
-				}}
+				onChange={handleSearch}
 			/>
 		</header>
 	);
