@@ -3,9 +3,18 @@ import "./line.css";
 const Line = ({ emojiList }) => {
 	return (
 		<>
-			{emojiList.map((emoji) => {
-				return <p key={emoji.title}>{emoji.title}</p>;
-			})}
+			<main>
+				<div className="container">
+					{emojiList.map((emoji) => {
+						return (
+							<div key={emoji.title} className="emoji">
+								<p>{emoji.symbol}</p>
+								<p>{emoji.title}</p>
+							</div>
+						);
+					})}
+				</div>
+			</main>
 		</>
 	);
 };
