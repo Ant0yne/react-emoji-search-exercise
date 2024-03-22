@@ -7,7 +7,12 @@ const Line = ({ emojiList }) => {
 				<div className="container">
 					{emojiList.map((emoji) => {
 						return (
-							<button key={emoji.title} className="emoji">
+							<button
+								key={emoji.title}
+								className="emoji"
+								onClick={() => {
+									navigator.clipboard.writeText(emoji.symbol);
+								}}>
 								<p>{emoji.symbol}</p>
 								<p>{emoji.title}</p>
 							</button>
