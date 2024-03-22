@@ -1,0 +1,12 @@
+.container {
+	padding: 0 10px;
+	height: 80vh;
+}
+
+#emoji-list {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	overflow-y: scroll;
+	height: 100%;
+}

@@ -5,19 +5,21 @@ const Line = ({ emojiList }) => {
 		<>
 			<main>
 				<div className="container">
-					{emojiList.map((emoji) => {
-						return (
-							<button
-								key={emoji.title}
-								className="emoji"
-								onClick={() => {
-									navigator.clipboard.writeText(emoji.symbol);
-								}}>
-								<p>{emoji.symbol}</p>
-								<p>{emoji.title}</p>
-							</button>
-						);
-					})}
+					<div id="emoji-list">
+						{emojiList.map((emoji) => {
+							return (
+								<button
+									key={emoji.title}
+									className="emoji"
+									onClick={() => {
+										navigator.clipboard.writeText(emoji.symbol);
+									}}>
+									<p>{emoji.symbol}</p>
+									<p>{emoji.title}</p>
+								</button>
+							);
+						})}
+					</div>
 				</div>
 			</main>
 		</>
