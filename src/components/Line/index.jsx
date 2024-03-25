@@ -14,8 +14,11 @@ const Line = ({ emojiList }) => {
 									onClick={() => {
 										navigator.clipboard.writeText(emoji.symbol);
 									}}>
-									<p>{emoji.symbol}</p>
-									<p>{emoji.title}</p>
+									<div className="emoji-symbol">
+										<p>{emoji.symbol}</p>
+										<h2>{emoji.title}</h2>
+									</div>
+									<p>click to copy</p>
 								</button>
 							);
 						})}

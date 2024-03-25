@@ -1,3 +1,21 @@
-.emoji {
-	display: flex;
+header {
+	position: sticky;
+	top: 0;
+	background-color: var(--white);
+	padding: 15px 0;
+}
+
+h1 {
+	font-size: 2.8rem;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+header > input {
+	width: 100%;
+	background-color: var(--white-grey);
+	border-radius: 5px;
+	border: 1px solid var(--light-grey);
+	padding: 10px 5px;
 }

@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 :root {
-	--light-grey: #d3d3d3;
+	--light-grey: #b1b1b1;
+
+	--white-grey: #f3f2f2;
 	--white: #fff;
 	--black: #000;
-	--purple: #5c48d3;
-	--red: #dd0c0c;
 }
 
 * {
@@ -20,18 +20,7 @@ html {
 body {
 	font-size: 1.6rem;
 	line-height: 22px;
-}
-
-h1 {
-	font-size: 3rem;
-	text-align: center;
-	font-weight: bold;
-	margin-bottom: 10px;
-}
-
-h3 {
-	color: var(--red);
-	text-align: center;
+	padding: 0px 10px;
 }
 
 button {
@@ -42,15 +31,6 @@ button {
 }
 
 button:hover {
-	background-color: var(--purple);
-}
-
-a {
-	color: var(--black);
-	text-decoration: none;
-}
-
-a,
-span {
+	background-color: var(--light-grey);
 	font-weight: bold;
 }

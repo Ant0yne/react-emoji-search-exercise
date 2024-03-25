@@ -1,6 +1,5 @@
 .container {
 	padding: 0 10px;
-	height: 80vh;
 }
 
 #emoji-list {
@@ -9,4 +8,33 @@
 	overflow: hidden;
 	overflow-y: scroll;
 	height: 100%;
+	gap: 2px;
+}
+
+.emoji {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.emoji-symbol {
+	display: flex;
+	text-align: start;
+	gap: 2px;
+	align-items: center;
+}
+
+h2 {
+	font-size: 1.3rem;
+	line-height: 22px;
+}
+
+.emoji > p {
+	font-size: 1.3rem;
+}
+
+@media (min-width: 394px) {
+	h2 {
+		font-size: 2rem;
+	}
 }
